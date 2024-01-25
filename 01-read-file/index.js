@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('node:path'); 
 
-const filePath = path.join('D:', 'builder', 'HTML-builder', '01-read-file', 'text.txt');
+const filePath = path.join(__dirname, 'text.txt');
 
 const readStream = fs.createReadStream(filePath, 'utf8');
 
